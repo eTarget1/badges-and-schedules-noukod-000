@@ -38,11 +38,10 @@ end
 #     puts message
 #   end
 
-def batch_badge_creator(attendees)
+def batch_badge_creator(speakers)
   attendees.collect do |name|
     badge_maker(name)
   end
-
 end
 
 def assign_rooms(attendees)
