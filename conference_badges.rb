@@ -14,5 +14,3 @@ end
   end
   badge_messages
 end
-
-
