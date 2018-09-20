@@ -27,22 +27,22 @@ end
 #   room_messages
 # end
 #
-# def printer(speakers)
-#   # outputs the results of batch_badge_creator, and assign_rooms
-#   badge_messages = batch_badge_creator(speakers)
-#   badge_messages.each do |message|
-#     puts message
-#   end
-#   room_messages = assign_rooms(speakers)
-#   room_messages.each do |message|
-#     puts message
-#   end
-
-def batch_badge_creator(speakers)
-  attendees.collect do |name|
-    badge_maker(name)
+ def printer(speakers)
+   # outputs the results of batch_badge_creator, and assign_rooms
+   badge_messages = batch_badge_creator(speakers)
+   badge_messages.each do |message|
+     puts message
   end
-end
+   room_messages = assign_rooms(speakers)
+   room_messages.each do |message|
+     puts message
+   end#
+
+# def batch_badge_creator(speakers)
+#   attendees.collect do |name|
+#     badge_maker(name)
+#   end
+# end
 
 def assign_rooms(attendees)
   room=0
